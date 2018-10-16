@@ -26,6 +26,10 @@ Full rebuild
 
     mvn clean install && docker-compose up -d --build && docker-compose logs -f
 
-Just apache configuration
+Just apache service
 
     docker-compose up -d --build apache && docker-compose logs -f
+
+Just spring service
+
+    docker-compose up -d --build spring && docker-compose logs -f spring
