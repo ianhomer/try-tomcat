@@ -6,3 +6,5 @@ services:
     build: ./try-tomcat-apache
     ports:
     - "80:80"
+    - "8001:8001"
+    - "8002:8002"

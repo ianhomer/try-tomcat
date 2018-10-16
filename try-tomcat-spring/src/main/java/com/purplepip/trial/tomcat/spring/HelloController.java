@@ -19,12 +19,17 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpServletRequest;
+
 @RestController
 @Slf4j
 public class HelloController {
   @RequestMapping("/greetings")
-  public String index() {
+  public String index(HttpServletRequest request) {
     LOG.info("Called {} index", HelloController.class.getSimpleName());
-    return "Greetings from Spring Boot!";
+    StringBuilder sb = new StringBuilder();
+    sb.append("Greetings from Spring Boot!");
+    sb.append('\n').append(request.getLocalName());
+    return sb.toString();
   }
 }

@@ -14,10 +14,18 @@ Visit http://localhost:8080/greetings
 
     docker-compose up -d
     
-Visit http://localhost/greetings
+Visit 
 
-And rebuild 
+* http://localhost/greetings
+* http://localhost:8001/greetings
+* http://localhost:8002/greetings
 
-    docker-compose up -d --build && docker-compose logs -f
+# Redeployment
+
+Full rebuild 
+
+    mvn clean install && docker-compose up -d --build && docker-compose logs -f
+
+Just apache configuration
+
     docker-compose up -d --build apache && docker-compose logs -f
-    docker-compose build --no-cache apache
