@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/try-tomcat.iml" filepath="$PROJECT_DIR$/try-tomcat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/try-tomcat-spring/try-tomcat-spring.iml" filepath="$PROJECT_DIR$/try-tomcat-spring/try-tomcat-spring.iml" />
     </modules>
   </component>
 </project>
