@@ -1,0 +1,8 @@
+version: '3'
+services:
+  spring:
+    build: ./try-tomcat-spring
+  apache:
+    build: ./try-tomcat-apache
+    ports:
+    - "80:80"
