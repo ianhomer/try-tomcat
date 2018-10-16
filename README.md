@@ -18,5 +18,6 @@ Visit http://localhost/greetings
 
 And rebuild 
 
-    docker-compose up -d --build
+    docker-compose up -d --build && docker-compose logs -f
+    docker-compose up -d --build apache && docker-compose logs -f
     docker-compose build --no-cache apache
